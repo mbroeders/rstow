@@ -1,7 +1,7 @@
 # RSTOW - An stow alternative written in Rust
 
 Rstow functions the same as the GNU program
-[[https://www.gnu.org/software/stow/][stow]]. It's main function is to manage
+[stow](https://www.gnu.org/software/stow/). It's main function is to manage
 my *dotfiles* in the *.dotfiles* folder. Rstow creates symlinks to the proper
 locations.
 
