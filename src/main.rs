@@ -48,6 +48,7 @@ fn traverse(dots: &PathBuf, dir: PathBuf, home: &PathBuf) {
         for entry in d {
             let current_item = entry.unwrap().path();
             if current_item.is_dir() {
+                if current_item.ends_with(".git") { continue };
                 let folder_to_create = get_path_name(&current_item, &dots, home); 
                 if !folder_to_create.exists() {
                     println!("{:?} does not exist, creating folder...", &folder_to_create);
